@@ -2,7 +2,7 @@
 import { Slot, Slottable } from "@radix-ui/react-slot";
 import { ButtonProps } from "./Button.types";
 import { buttonVariants } from "./Button.styles";
-import { cn } from "lib/cn";
+import { cn } from "../lib/cn";
 
 export const Button: React.FC<ButtonProps> = ({
   asChild = false,
@@ -16,6 +16,7 @@ export const Button: React.FC<ButtonProps> = ({
 
   return (
     <Comp
+      data-testid="buttonComponent"
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     >
