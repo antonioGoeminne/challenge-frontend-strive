@@ -21,7 +21,7 @@ const navigationOptions = [
     alt: "Go settings page",
   },
   {
-    href: "/profile",
+    href: "/profile/photos",
     icon: (fill: string) => <ProfileIcon fill={fill} />,
 
     alt: "Go user page",

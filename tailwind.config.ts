@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: { raw: "(min-width: 375px)" },
+      },
       backgroundImage: {
         profile: "url('/public/background.jpg')",
       },

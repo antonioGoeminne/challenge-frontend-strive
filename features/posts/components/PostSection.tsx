@@ -1,10 +1,23 @@
+import { Outlet, useLocation } from "@remix-run/react";
 import { Tab } from "../../../ui/Tab/Tab";
 
 const options = [
-  { triggerLabel: "Photos", value: "photos", children: <>1</> },
-  { triggerLabel: "Likes", value: "likes", children: <>2 </> },
+  {
+    triggerLabel: "Photos",
+    value: "photos",
+    children: <Outlet />,
+    href: "photos",
+  },
+  {
+    triggerLabel: "Likes",
+    value: "likes",
+    children: <Outlet />,
+    href: "likes",
+  },
 ];
 
 export const PostSection = () => {
-  return <Tab options={options} />;
+  const defaultValue = useLocation()?.pathname?.split("/")?.pop() || "";
+
+  return <Tab options={options} defaultValue={defaultValue} />;
 };
