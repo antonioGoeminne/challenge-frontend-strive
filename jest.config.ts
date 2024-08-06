@@ -5,6 +5,7 @@ module.exports = {
     "!**/*.d.ts",
     "!**/node_modules/**",
     "!**/public/**",
+    "!**/images/**",
     "!**/app/entry.client.tsx/**",
     "!**/app/entry.server.tsx/**",
     "!**/tests/**",

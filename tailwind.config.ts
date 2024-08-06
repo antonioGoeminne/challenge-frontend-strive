@@ -20,6 +20,7 @@ export default {
         },
         gray: {
           DEFAULT: "#544C4C",
+          100: "#C7C6C5",
         },
       },
     },
