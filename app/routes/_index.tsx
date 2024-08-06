@@ -17,7 +17,7 @@ export default function Index() {
           Challenge frontend strive
         </h1>
         <Button className="w-[124px]">
-          <Link to={"/profile"}>Go to profile</Link>
+          <Link to={"/profile/photos"}>Go to profile</Link>
         </Button>
       </div>
     </div>
