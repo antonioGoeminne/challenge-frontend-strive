@@ -5,6 +5,7 @@ import avatar from "../../../images/avatar.png";
 import { FollowersStats } from "./FollowersStats";
 import { Button } from "../../../ui/Button/Button";
 import { LocationIcon } from "../../../images/icons/LocationIcon";
+import { Link } from "@remix-run/react";
 
 // note: the bg profile could be dynamic
 
@@ -26,7 +27,9 @@ export const ProfileCard = () => {
             <FollowersStats />
           </div>
           <span className="flex gap-2 my-4">
-            <Button className="px-6">Edit profile</Button>
+            <Button asChild className="px-6">
+              <Link to={"edit"}>Edit profile</Link>
+            </Button>
             <Button className="px-6">Add friends</Button>
           </span>
         </div>
