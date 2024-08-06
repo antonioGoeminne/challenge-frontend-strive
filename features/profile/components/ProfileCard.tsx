@@ -11,8 +11,7 @@ import { LocationIcon } from "../../../images/icons/LocationIcon";
 export const ProfileCard = () => {
   return (
     <>
-      <div className="w-full absolute top-0 bg-profile h-[200px] bg-center bg-cover bg-no-repeat"></div>
-      <div data-testid="profileCard" className="relative top-40">
+      <div data-testid="profileCard">
         <div className=" flex justify-center flex-col items-center">
           <Avatar className="bg-white" src={avatar} alt="profile" />
           <h1 className="text-primary font-bold text-lg my-2">
