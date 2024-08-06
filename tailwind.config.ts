@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        profile: "url('./images/background.jpg')",
+        profile: "url('/public/background.jpg')",
       },
       colors: {
         primary: {
