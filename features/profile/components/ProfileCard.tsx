@@ -1,10 +1,10 @@
 import { Avatar } from "../../../ui/Avatar/Avatar";
-import LocationIcon from "../../../images/icons/location.svg";
 
 // FIX: WARNING: it should bring the image from a service like cloudinary, in this way of local image is dangerous
 import avatar from "../../../images/avatar.png";
 import { FollowersStats } from "./FollowersStats";
 import { Button } from "../../../ui/Button/Button";
+import { LocationIcon } from "../../../images/icons/LocationIcon";
 
 // note: the bg profile could be dynamic
 
@@ -20,11 +20,7 @@ export const ProfileCard = () => {
           </h1>
           <p className="text-gray text-sm font-medium">Interior designer</p>
           <span className="flex items-center gap-1 my-1 mr-1">
-            <img
-              className="w-[27px] h-[27px]"
-              src={LocationIcon}
-              alt="Lagos, Nigeria"
-            />
+            <LocationIcon />
             <p className="text-gray text-sm font-medium">Lagos, Nigeria</p>
           </span>
           <div className="w-full max-w-[242px]">
