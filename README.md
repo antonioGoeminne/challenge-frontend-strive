@@ -1,7 +1,7 @@
 Hi! This is a profile section with a bottom bar to navigation, built with remix run ✨.
 the design is based on this [figma](https://www.figma.com/community/file/1244998608440129362/user-profile-settings-screen-community-community) from community
 
-##Features
+## Features
 
 In this project, I´ve used these tools ⛏️:
 
@@ -11,7 +11,7 @@ In this project, I´ve used these tools ⛏️:
 - 🎨 **[Commitlint](https://commitlint.js.org/)** - helps your team adhere to a commit convention.
 - 🐺 **[Husky](https://typicode.github.io/husky/)** - Husky enhances your commits and more 🐶 woof!
 
-##How to navigate this project
+## How to navigate this project
 
 You can navigate to `app` to see routes.
 in `ui` is a the ui layer where are general components like Button, Tab, etc.
@@ -24,12 +24,12 @@ To execute local the project you can clone the repository and run npm install.
 After that you can run `npm run dev` to generate a local server.
 You can see the coverage too with `npm run coverage`, or do some watch with `npm run test:preview`
 
-##Focus
+## Focus
 
 i decide to use remix and nested routes to bring data from a fake api to simulate a real environment.
 The html model is based on mobile first to help the page load on multiple devices like smartphones and make the transition to a desktop model easier.
 
-##Troubles
+## Troubles
 
 - the first problem I have is with the waves that are in the design. I tried to simulate this but it was a bit hard, I looked for solutions but I didn't want to dedicate too much time to that because there wasn't clear info on the internet.
 
