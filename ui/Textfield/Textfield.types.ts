@@ -2,7 +2,7 @@ import { InputHTMLAttributes } from "react";
 import { textFieldVariants } from "./Textfield.styles";
 import { VariantProps } from "class-variance-authority";
 
-export type TextFieldTypes = "text";
+export type TextFieldTypes = "text" | "email" | "date";
 
 type Input = Omit<InputHTMLAttributes<HTMLInputElement>, "size">;
 type VariantType = VariantProps<typeof textFieldVariants>;

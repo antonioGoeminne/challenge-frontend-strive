@@ -9,6 +9,8 @@ const DefaultTextfield: React.FC<TextfieldProps> = ({ ...props }) => {
 
 const textFieldTypes: Record<TextFieldTypes, React.FC<TextfieldProps>> = {
   text: DefaultTextfield,
+  email: DefaultTextfield,
+  date: DefaultTextfield,
 };
 
 export const Textfield: React.FC<TextfieldProps> = ({

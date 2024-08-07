@@ -7,7 +7,7 @@ jest.mock("@remix-run/react", () => ({
 }));
 
 it("should render ProfileCard", () => {
-  render(<ProfileCard />);
+  render(<ProfileCard user={{ username: "", address: { city: "some" } }} />);
 
   const card = screen.getByTestId("profileCard");
 
