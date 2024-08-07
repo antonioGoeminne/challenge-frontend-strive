@@ -2,16 +2,27 @@ import { Form } from "@remix-run/react";
 import { Button } from "ui/Button/Button";
 import { Select } from "ui/Select/Select";
 import { Textfield } from "ui/Textfield/Textfield";
+import { FormEditProps } from "../types";
 
-export const FormEditProfile = () => {
+export const FormEditProfile: React.FC<FormEditProps> = ({ user }) => {
   return (
     <Form
       id="contact-form"
       method="post"
       className="flex flex-col gap-3 justify-center items-center w-full my-4"
     >
-      <Textfield id="name" label="Name" name="name" />
-      <Textfield label="Email" type="email" name="email" />
+      <Textfield
+        defaultValue={user.username}
+        id="name"
+        label="Name"
+        name="name"
+      />
+      <Textfield
+        defaultValue={user.email}
+        label="Email"
+        type="email"
+        name="email"
+      />
       <Textfield label="Date of Birth" type="date" name="date" />
       <Select
         name="country"
