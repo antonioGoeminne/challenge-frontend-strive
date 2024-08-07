@@ -12,7 +12,7 @@ export default {
         sm: { raw: "(min-width: 375px)" },
       },
       backgroundImage: {
-        profile: "url('/public/background.jpg')",
+        profile: "url('/background.jpg')",
       },
       colors: {
         primary: {
@@ -24,6 +24,7 @@ export default {
         gray: {
           DEFAULT: "#544C4C",
           100: "#C7C6C5",
+          200: "#EAE9E9",
         },
       },
     },
